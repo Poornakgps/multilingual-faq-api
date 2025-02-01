@@ -1,0 +1,150 @@
+{
+    "info": {
+        "name": "Django API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "GET /api/faq/",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "{base_url}/api/faq/",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "faq"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "DELETE /api/faq/<int:id>/delete/",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "{base_url}/api/faq/<int:id>/delete/",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "faq",
+                        "<int:id>",
+                        "delete"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET /api/faq/<int:id>/language/<str:lang>/",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "{base_url}/api/faq/<int:id>/language/<str:lang>/",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "faq",
+                        "<int:id>",
+                        "language",
+                        "<str:lang>"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "PUT /api/faq/<int:id>/update/",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "{base_url}/api/faq/<int:id>/update/",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "faq",
+                        "<int:id>",
+                        "update"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "POST /api/faq/create/",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "{base_url}/api/faq/create/",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "faq",
+                        "create"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "GET /api/faq/language/<str:lang>/",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "{base_url}/api/faq/language/<str:lang>/",
+                    "host": [
+                        "{{base_url}}"
+                    ],
+                    "path": [
+                        "api",
+                        "faq",
+                        "language",
+                        "<str:lang>"
+                    ]
+                },
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            }
+        }
+    ]
+}
